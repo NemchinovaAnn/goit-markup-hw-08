@@ -1,7 +1,6 @@
 .hero{
     padding-top: 195px;
     padding-bottom: 205px;
-    background: #2F303A;
     max-width: 1600px; 
     background: #2F303A;
     display: flex;
@@ -10,17 +9,25 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin-bottom: 94px;
+    margin-bottom: 60px;
+    @include dest {
+        margin-bottom: 94px;
+    }
 }
 
 .hero__title{
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 30px;
+    @include dest {
+        font-size: 44px;
+        line-height: 1.36; 
+    }
 }
 .hero__btn{
     color: #FFFFFF;
