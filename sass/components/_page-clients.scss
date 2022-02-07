@@ -4,8 +4,8 @@
 .clients-box__titel{
     font-style: normal;
     font-weight: bold;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
@@ -13,20 +13,18 @@
 }
 .clients{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
 }
 .clients__item{
-    width: 170px;
-    height: 92px;
-    padding: 16px 32px;
+    padding: 16px 52px;
     border: 1px solid;
     border-color: #AFB1B8;
     border-radius: 4px;
+    width: calc(100% / 2 - 30px);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1 );
-    & + &{
-        margin-left: 30px;
-        }
+    // & + &{
+    //     margin-left: 30px;
+    //     }
     &:hover, &:focus{
         border-color: #2196F3;
     }

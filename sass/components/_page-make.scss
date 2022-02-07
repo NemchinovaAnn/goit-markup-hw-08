@@ -1,5 +1,9 @@
-.make{
-    padding-bottom: 94px;
+.make-container{
+    display: none;
+    @include dest{
+        display: block;
+        padding-bottom: 94px;
+    }
 }
 .make__title{
     font-weight: bold;

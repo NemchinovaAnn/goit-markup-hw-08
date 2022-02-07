@@ -6,7 +6,10 @@
     line-height: 1.16;
     letter-spacing: 0.03em;
     color: #000000;
-    margin-right: 93px;
+    margin-right: 88px;
+    @include dest{
+        margin-right: 93px;
+    }
 }
 .logo__special {
     font-family: "Raleway";
