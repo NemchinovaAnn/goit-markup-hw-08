@@ -1,5 +1,10 @@
 .clients-box{
-    padding-bottom: 94px;
+    padding-bottom: 45px;
+    padding-top: 60px;
+    @include dest{
+        padding-bottom: 79px;
+        padding-top: 94px;  
+    }
 }
 .clients-box__titel{
     font-style: normal;
@@ -9,22 +14,36 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    @include dest{
+    font-size: 36px;
+    line-height: 1.17;
+    }
 }
 .clients{
     display: flex;
     flex-wrap: wrap;
+    @include dest{
+        justify-content: center;
+        align-items: center; 
+    }
 }
 .clients__item{
+    width: calc(100% / 2 - 30px);
+    @include tab{
+        width: calc(100% / 3 - 30px); 
+        padding: 16px 60px; 
+    }
+    @include dest{
+        width: calc(100% / 6 - 30px); 
+        padding: 16px 32px; 
+    }
     padding: 16px 52px;
     border: 1px solid;
     border-color: #AFB1B8;
     border-radius: 4px;
-    width: calc(100% / 2 - 30px);
+    margin: 15px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1 );
-    // & + &{
-    //     margin-left: 30px;
-    //     }
     &:hover, &:focus{
         border-color: #2196F3;
     }
@@ -40,4 +59,3 @@
     fill: #2196F3;
 }
 }
-
