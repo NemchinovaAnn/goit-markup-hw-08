@@ -148,9 +148,7 @@
 }
 .footer-box-btn{
     position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    text-align: center;
     @include dest{
         padding-left: 12px;
         padding-top: 35px;

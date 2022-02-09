@@ -12,8 +12,12 @@
     visibility: hidden;
 }
 .modal{
-    min-height: 581px;
-    width: 528px;
+    @include dest{
+        min-height: 581px;
+        width: 528px;
+    }
+    min-height: 609px;
+    width: 450px;
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -78,7 +82,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
-    line-height: 1.16;
+    line-height: 1.17;
     letter-spacing: 0.01em; 
     color: #757575;
 }
@@ -130,8 +134,8 @@
 .chek-text{
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: #757575;
     display: flex;
@@ -143,7 +147,14 @@
         border: 2px solid #212121;
         border-radius: 3px;
         margin-right: 8px;
-        margin-left: 12px;
+       
+    }
+    @include dest{
+        font-size: 14px;
+        line-height: 1.71;
+        &::before{
+            margin-left: 12px;
+        }
     }
 }
 .policy-chek:checked + .chek-text::before{
@@ -172,6 +183,9 @@ background-size: cover;
     text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
-    margin-left: 120px;
+    margin-left: 85px;
+    @include dest{
+        margin-left: 120px;
+    }
     
 }

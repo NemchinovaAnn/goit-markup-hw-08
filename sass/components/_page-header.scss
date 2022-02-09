@@ -2,10 +2,14 @@
     display: flex;
     position: relative;
     width: 100%;
-    @include dest{
-        padding-top: 24px;
-        padding-bottom: 25px;
+    height: 60px;
+    @include tab{
+        height: 80px;
     }
+    // @include dest{
+    //     padding-top: 24px;
+    //     padding-bottom: 25px;
+    // }
 }
 .header__container{
     display: flex;
@@ -58,9 +62,8 @@
         border-radius: 2px;
         position: absolute;
         left: 0;
-        bottom: -19px;
-        @include dest{
-        bottom: -31px; 
+        @include tab{
+        bottom: -30px; 
         }
     }
 }
@@ -120,8 +123,7 @@
     }
 }
 .header-menu__btn-open{
-    margin-right: 15px;
-    margin-top: 5px;
+    margin: 10px 15px 0 0;
     padding: 0;
     align-items: center;
     justify-content: center;
