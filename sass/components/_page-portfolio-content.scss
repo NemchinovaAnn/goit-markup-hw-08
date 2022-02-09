@@ -1,34 +1,57 @@
 .content-list{
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 94px;
+    padding-bottom: 40px;
+    @include tab{
+        display: flex;
+        flex-wrap: wrap;
+    @include dest{
+        justify-content: center;
+          padding-bottom: 79px;
+    }
+    }
 }
 .content-item{
-    margin: -15px;
-    margin-bottom: -30px;
-    margin-left: 0px;
-    margin-right: 30px;
+    margin-bottom: 30px;
     border: 1px solid #EEEEEE;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1 );
-    & {
-        width: calc(100% / 3 - 30px);
-        margin: 15px;
-        margin-bottom: 30px;
-    }
     &:hover,&:focus{
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     }
+    @include tab{
+        margin: -15px;
+        margin-bottom: -30px;
+        margin-left: 0px;
+        margin-right: 30px;
+        & {
+            width: calc(100% / 2 - 30px);
+            margin: 15px;
+            // margin-bottom: 30px;
+        }
+        // &:nth-child(2n){
+        //     margin-left: 0;
+        // }
+    @include dest{
+        width: calc(100% / 3 - 30px);
+        // &:nth-child(3n){
+        //     margin-left: 0;
+        // }
+        }
+    }
+   
 }
 .content-animation{
     position: relative;
     overflow: hidden;
+}
+.content-imege{
+    width: 100%;
+    margin-bottom: 20px;
 }
 .content-animation-text{
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
-    background: rgba(33, 150, 243, 0.9);
+    // background: rgba(33, 150, 243, 0.9);
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -44,7 +67,7 @@
     }
 }
 .contener-box{
-    padding: 24px 20px;
+    padding: 0 24px 20px 24px;
 }
 .content-subtitle{
     font-weight: bold;

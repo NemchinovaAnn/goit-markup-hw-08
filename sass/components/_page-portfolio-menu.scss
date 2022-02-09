@@ -1,16 +1,28 @@
 .menu{
-    padding-top: 94px;
-    padding-bottom: 50px;
+    padding-top: 60px;
+    padding-bottom: 25px;
+    @include tab{
+        padding-bottom: 15px;
+    }
+    @include dest{
+        padding-top: 94px;
+        padding-bottom: 35px;
+    }
 }
 .menu-list{
     display: flex;
-    justify-content: center;
-    padding: 6px 22px;
-    border-radius: 4px;
-    bottom: none;
+    flex-wrap: wrap;
+    @include tab{
+        justify-content: center;
+    }
+
 }
 .menu-item{
     margin-right: 8px;
+    margin-bottom: 15px;
+    @include tab{
+        margin-bottom: 0;
+    }
 }
 .menu-btn{
     font-weight: 500;

@@ -4,28 +4,46 @@
     padding-bottom: 60px;
 }
 .footer-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    @include dest{
+        display: flex;
+        justify-content: center;
+    }
+}
+.footer-box{
+    @include tab{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;  
+    }
 }
 .contact-social{
     text-align: center;
     margin-bottom: 52px;
+    @include dest{
+        margin-bottom: 0;
+    }
 }
 .footer__logo{
     font-family: Raleway;
     font-style: normal;
     font-weight: bold;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+    @include dest{
+        font-size: 26px;
+        line-height: 1.19;
+    }
 }
 .footer-connection{
     margin-top: 20px;
 }
 .footer-connection__list{
     margin-bottom: 8px;
+    @include dest{
+        margin-top: 9px;
+    }
 }
 .footer-connection__map {
     font-style: normal;
@@ -41,13 +59,11 @@
 .footer-address :focus{
     color: var(--accent-color);
 }
-
-
-
-// .footer-contact{
-//     padding-left: 70px;
-// }
-
+.footer-contact{
+    @include dest{
+        padding-left: 70px;
+    }
+}
 .footer__title{
     font-style: normal;
     font-weight: bold;
@@ -58,6 +74,9 @@
     text-align: center;
     color: #FFFFFF;
     margin-bottom: 20px;
+    @include dest{
+        text-align: justify;
+    }
 }
 .footer-connection__item{
     font-style: normal;
@@ -99,16 +118,16 @@
     fill: #FFFFFF;
 }
 
-
-
-
-
 .footer-input{
     padding: 0 0 20px 0;
+    text-align: center;
+    @include dest{
+        padding: 0;
+        padding-left: 93px;  
+    }
 }
-
 .footer-input__email{
-    width: 450px;
+    width: 420px;
     height: 50px;border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -123,11 +142,19 @@
     color: rgba(255, 255, 255, 0.6);
     padding-left: 16px;
     cursor: pointer;
+    @include dest{
+        width: 358px;
+    }
 }
 .footer-box-btn{
-    // padding-left: 12px;
-    // padding-top: 35px;
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @include dest{
+        padding-left: 12px;
+        padding-top: 35px;
+    }
 }
 .footer-box-btn__button{
     border: none;
@@ -146,7 +173,12 @@
 .footer-box-btn__icon{
     position: absolute;
     top: 13px;
-    right: 28px;
-    // left: 153px;
-    // top: 50px;
+    right: 135px;
+    @include tab{
+        right: 295px;
+    }
+    @include dest{
+        left: 153px;
+        top: 50px;
+    }
 }

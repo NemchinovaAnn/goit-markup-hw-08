@@ -16,25 +16,53 @@
 <body>
     <!-----------ШАПКА--------- -->
     <header class="header header-portfolio"> 
-        <div class="container header__container">
-            <nav class="header-nav">
-                <a class="link header__logo animate__animated animate__pulse" href="/"><span class="logo__special">Web</span>Studio</a>
-                <ul class=" list site-list">
-                    <li class="site-list__item"> <a class="link site-list__link" href="./index.html">Студия</a></li>
-                    <li class="site-list__item"> <a class="link site-list__link current-portfolio" href="./portfolio.html">Портфолио</a></li>
-                    <li class="site-list__item"> <a class="link site-list__link" href="Контакты">Контакты</a></li>
-                </ul>
-            </nav>  
+        <!-- <div class="container header__container">
+        <nav class="header-nav">
+            <a class="link header__logo animate__animated animate__pulse" href="/"><span class="logo__special">Web</span>Studio</a>
+            <ul class=" list site-list">
+                <li class="site-list__item"> <a class="link site-list__link current-studio" href="./index.html">Студия</a></li>
+                <li class="site-list__item"> <a class="link site-list__link" href="./portfolio.html">Портфолио</a></li>
+                <li class="site-list__item"> <a class="link site-list__link" href="Контакты">Контакты</a></li>
+            </ul>
+        </nav>  
             <ul class=" list adres-list">
-                <li> <a class="link header-contact adres-list__link" href="mailto:info@devstudio.com" target="_blank" rel= "noopener noreferrer"> <svg class="adres-list__icon" width="16" height="12" ><use href="./images/icons.svg#icon-envelope-hover"></use></svg>info@devstudio.com</a></li> 
-                <li> <a class="link header-contact adres-list__link"  href="tel:+380961111111" target="_blank" rel= "noopener noreferrer" > <svg class="adres-list__icon" width="10" height="16" ><use href="./images/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a></li> 
-            </ul>    
-            </div> 
+                <li class="link adres-list__item"> <a class="link header-contact adres-list__link" href="mailto:info@devstudio.com" target="_blank" rel= "noopener noreferrer"> <svg class="adres-list__icon" width="16" height="12" ><use href="./images/icons.svg#icon-envelope-hover"></use></svg>info@devstudio.com</a></li> 
+                <li class="link adres-list__item"><a class="link header-contact adres-list__link"  href="tel:+380961111111" target="_blank" rel= "noopener noreferrer" > <svg class="adres-list__icon" width="10" height="16" ><use href="./images/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a></li> 
+            </ul>   
+        </div>  -->
+        <!-------------------mob-menu-------------->
+        <!-- <div class="header-menu" >
+            <button type="button" class="header-menu__btn-open" data-menu-open> <svg class="header-menu__icon" width="40" height="40"><use href="./images/icons.svg#icon-header-menu"></use></svg> </button>
+        </div>
+        <div class="mob-menu is-hidden" data-menu>
+            <div class="mob-menu-top">
+            <button type="button" class="mob-menu__button-close" data-menu-close> <svg class="mob-menu__icon" width="19" height="19"><use href="./images/icons.svg#icon-close"></use></svg></button>
+            <nav class="mob-menu-nav">
+            <ul class=" list mob-menu__list">
+                <li class="link mob-menu__item"> <a class="link mob-menu__link" href="./index.html">Студия</a></li>
+                <li class="link mob-menu__item"> <a class="link mob-menu__link" href="./portfolio.html">Портфолио</a></li>
+                <li class="link mob-menu__item"> <a class="link mob-menu__link" href="Контакты">Контакты</a></li>
+            </ul>
+            </nav>
+        </div>
+        <div class="mob-menu-bottom">
+            <ul class="list mob-adres-list">
+                <li class="mob-adres-list__item"> <a class="link mob-adres-list__tel"  href="tel:+380961111111" target="_blank" rel= "noopener noreferrer" >+38 096 111 11 11</a></li> 
+                <li class="mob-adres-list__item"> <a class="link mob-adres-list__email" href="mailto:info@devstudio.com" target="_blank" rel= "noopener noreferrer">info@devstudio.com</a></li> 
+            </ul>   
+            <ul class="list mob-contact-list">
+                <li class="link mob-contact-list__item"><a class="link mob-contact-list__link" href="" target="_blank" rel= "noopener noreferrer">Instagram</a></li>
+                <li class="link mob-contact-list__item"><a class="link mob-contact-list__link" href="" target="_blank" rel= "noopener noreferrer">Twitter</a></li>
+                <li class="link mob-contact-list__item"><a class="link mob-contact-list__link" href="" target="_blank" rel= "noopener noreferrer">Facebook</a></li>
+                <li class="link mob-contact-list__item"><a class="link mob-contact-list__link" href="" target="_blank" rel= "noopener noreferrer">LinkedIn</a></li>
+            </ul>
+        </div>
+        </div> -->
     </header>
-    <!------------ОСНОВНОЙ КОНТЕНТ ------------->
+    <!------------ОСНОВНОЙ КОНТЕНТ------------->
      <main>
         <section class="menu">
-            <div class="container">
+            <div class="container menu-container">
         <ul class="list menu-list">
             <li class="menu-item"> <button class="menu-btn" type="button">
                 Все
@@ -54,6 +82,7 @@
         </ul>
     </div>
     </section>
+    <!-------------------------content-------------------->
     <section class="content">
         <div class="container">
         <ul class="list content-list">
@@ -152,10 +181,11 @@
     </section>
     </main>
     <!-------------footer------------->
-    <footer class="footer">
-        <div class="container footer-container">
+    <footer class="footer container">
+        <div class="footer-container">
+            <div class="footer-box">
             <div class="contact-social">
-                <a class="link footer__logo" href="/"><span class="logo-special">Web</span>Studio</a>
+                <a class="link footer__logo" href="/"><span class="logo__special">Web</span>Studio</a>
                 <address class="footer-address">
                 <ul class="list footer-connection">
                     <li class="footer-connection__list" > <a class="link footer-connection__map" href="https://goo.gl/maps/7V8qDzGipB6XyWxd7" target="_blank" rel= "noopener noreferrer" >г. Киев, пр-т Леси Украинки, 26</a></li>
@@ -172,12 +202,13 @@
                     <li class="footer-contact-list__item"> <a href="" class="footer-contact-list__link" target="_blank" rel= "noopener noreferrer" ><svg class="footer-contact-list__icons" width="20" height="20"><use href="./images/icons.svg#icon-linkedin"></use></svg></a></li>
                 </ul>
             </div>
-            <div class="container footer-input">
+        </div>
+            <div class="footer-input">
                 <h3 class="footer__title">Подпишитесь на рассылку</h3>
                 <form action="#">
                 <input class="footer-input__email" type="email" placeholder="E-mail" name="mailing-list">
             </div>
-            <div class=" container footer-box-btn">
+            <div class="footer-box-btn">
                 <button type="submit" class="footer-box-btn__button">Подписаться</button>
                 <svg class="footer-box-btn__icon" width="24" height="24"><use href="images/icons.svg#icon-footer-btn"></use></svg>
                 </form>
@@ -186,7 +217,7 @@
         </div>
     </footer>
     <div>
-        <script>src="./js/menu.js"</script>
+        <script src="./js/menu.js"></script>
     </div>
 </body>
 </html>
